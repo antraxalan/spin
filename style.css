@@ -1,0 +1,41 @@
+.container {
+  position: absolute;
+  left: 20%;
+}
+.roulette {
+  position: absolute;
+  margin: 0 auto;
+  width: 462px;
+  height: 462px;
+  left: 40%;
+  background-color: red;
+  background-image: url('phieneasroulette.png');
+  border-radius: 300px;
+}
+
+.spinner {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  width: 227px;
+  height: 227px;
+  top: 120px;
+  left: 116px;
+  border-radius: 100%;
+  z-index: 1000;
+  background-color: #dbdbdb;
+}
+
+.spinner .pointer {
+  position: absolute;
+  top: -38px;
+  left: 72px;
+  width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  
+  border-bottom: 47px solid #dbdbdb;
+}
