@@ -97,6 +97,41 @@
 		input[type=range]:focus::-ms-fill-upper {
 			background: #50555C;
 		}
+
+		*
+		{
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		input
+		{
+			-webkit-user-select: auto !important;
+			-khtml-user-select: auto !important;
+			-moz-user-select: auto !important;
+			-ms-user-select: auto !important;
+			user-select: auto !important;
+		}
+
+		*{
+			-webkit-user-drag: none;
+			-moz-user-drag: none;
+			-ms-user-drag: none;
+			user-drag: none;
+		}
+
+		/* iphone para q no salga un popup al sostener un tap en <a> */
+		*
+		{
+			-webkit-touch-callout: none;
+			-moz-touch-callout: none;
+			-ms-touch-callout: none;
+			touch-callout: none;
+		}
+
 	</style>
 	<input type="range" min="3" max="15" value="5" step="1" class="input_slider"/>
 	<!-- <span id="rango">0</span> -->
@@ -141,7 +176,7 @@
 	</style>
 	<div id="slider"></div>
 
-	<div class="logo"><img src="cbn.png"></div>
+	<div class="logo" style="margin-bottom: 30px"><img src="cbn.png"></div>
 	<div class="container">
 		<div class="roulette"></div>
 		<button class="spinner"><span><img src="face.png"></span><div class="pointer"></div></button>  
